@@ -6,3 +6,10 @@ categories:
   - Servicios
   - Tecnología
   - Tendencias
+blog:
+  categories:
+    - Comida
+food:
+  categories:
+    - Helados
+    - Pizzas

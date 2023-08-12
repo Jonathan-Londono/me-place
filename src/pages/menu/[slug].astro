@@ -8,7 +8,7 @@ import Link from "@components/ui/link.astro";
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const entries = await getCollection("blog");
+  const entries = await getCollection("menu");
   return entries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },

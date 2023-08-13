@@ -120,52 +120,52 @@ collections:
           - {label: Alt, name: alt, widget: string}
           - {label: Avatar, name: src, widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
-  # - label: "Prices" # Used in the UI
-  #   name: "prices" # Used in routes, e.g., /admin/collections/blog
-  #   folder: "src/content/prices" # The path to the folder where the documents are stored
-  #   slug: "{{year}}-{{month}}-{{day}}-{{type}}-{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   create: true # Allow users to create new documents in this collection
-  #   sortable_fields: ['commit_date', 'name', 'publishDate']
-  #   view_groups:
-  #     - label: Publish Date
-  #       field: publishDate
-  #       # groups items based on the value matched by the pattern
-  #       pattern: \d{4}-\d{2}-\d{2}
-  #     - label: Drafts
-  #       field: draft
-  #     - label: Types
-  #       field: type
-  #   fields: # The fields for each document, usually in front matter
-  #     - {label: "draft", name: "draft",  widget: "hidden", default: false}
-  #     - {label: "Name", name: "name", widget: "string"}
-  #     - label: "Type"
-  #       name: "type"
-  #       widget: "select"
-  #       options:
-  #         - {label: Hourly, value: hourly}
-  #         - {label: Monthly, value: monthly}
-  #         - {label: Annual, value: annual}
-  #         - {label: Custom, value: custom}
-  #       default: monthly
-  #     - label: "Price"
-  #       name: "price"
-  #       widget: "object"
-  #       fields:
-  #         - {label: "Current", name: current, widget: number, required: false}
-  #         - {label: "Previous", name: previous, widget: number, required: false}
-  #     - {label: "Currency", name: "currency", widget: "string", default: "$"}
-  #     - {label: "Popular", name: "popular",  widget: "boolean", default: false}
-  #     - {label: "Description", name: "description", widget: "string", required: false}
-  #     - {label: "Features", name: "features", widget: "string-array"}
-  #     - {label: "Publish Date", name: "publishDate", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm"}
-  #     - {label: "Expiration Date", name: "expirationDate", widget: "datetime", default: "", date_format: "YYYY-MM-DD", time_format: "HH:mm", required: false}
-  #     - {label: "Order", name: "order",  widget: "number", required: false}
-  #     - label: "Button"
-  #       name: "button"
-  #       widget: "object"
-  #       fields:
-  #         - {label: "Text", name: "text", widget: "string"}
-  #         - {label: "Link", name: "link", widget: "string"}
+  - label: "Prices" # Used in the UI
+    name: "prices" # Used in routes, e.g., /admin/collections/blog
+    folder: "src/content/prices" # The path to the folder where the documents are stored
+    slug: "{{year}}-{{month}}-{{day}}-{{type}}-{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    create: true # Allow users to create new documents in this collection
+    sortable_fields: ['commit_date', 'name', 'publishDate']
+    view_groups:
+      - label: Publish Date
+        field: publishDate
+        # groups items based on the value matched by the pattern
+        pattern: \d{4}-\d{2}-\d{2}
+      - label: Drafts
+        field: draft
+      - label: Types
+        field: type
+    fields: # The fields for each document, usually in front matter
+      - {label: "draft", name: "draft",  widget: "hidden", default: false}
+      - {label: "Name", name: "name", widget: "string"}
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - {label: Hourly, value: hourly}
+          - {label: Monthly, value: monthly}
+          - {label: Annual, value: annual}
+          - {label: Custom, value: custom}
+        default: monthly
+      - label: "Price"
+        name: "price"
+        widget: "object"
+        fields:
+          - {label: "Current", name: current, widget: number, required: false}
+          - {label: "Previous", name: previous, widget: number, required: false}
+      - {label: "Currency", name: "currency", widget: "string", default: "$"}
+      - {label: "Popular", name: "popular",  widget: "boolean", default: false}
+      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Features", name: "features", widget: "string-array"}
+      - {label: "Publish Date", name: "publishDate", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm"}
+      - {label: "Expiration Date", name: "expirationDate", widget: "datetime", default: "", date_format: "YYYY-MM-DD", time_format: "HH:mm", required: false}
+      - {label: "Order", name: "order",  widget: "number", required: false}
+      - label: "Button"
+        name: "button"
+        widget: "object"
+        fields:
+          - {label: "Text", name: "text", widget: "string"}
+          - {label: "Link", name: "link", widget: "string"}
   - label: "Admin"
     name: "admin"
     files:
